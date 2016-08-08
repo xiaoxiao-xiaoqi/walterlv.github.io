@@ -1,23 +1,50 @@
 ---
-layout: default
 ---
 
-<div id="dev-panel" class="flex-cont">
-  <div id="dev-text" class="flex-item">Building...</div>
-  <div id="dev-text" class="flex-item">正在构建……</div>
-  <div id="dev-text" class="flex-item">正在開發……</div>
-  <div id="dev-text" class="flex-item">開発中……</div>
-</div>
-<br/>
-<div class="split-body flex-item flex-cont">
-  <div class="split-content">
-    <div class="flex-cont flex-ver post-list">
-      {% for post in site.posts %}
-      <div class="flex-cont flex-ver post-list-item">
-        <a class="post-list-item-head" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        <div class="post-list-item-date">{{ post.date | date: "%Y年%m月%d日" }}</div>
-      </div>
-      {% endfor %}
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>晓 · 旭</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="stylesheet" href="{{ " /lib/css/reset.css " | prepend: site.baseurl }}" />
+  <link rel="stylesheet" href="{{ " /styles/qixi.css " | prepend: site.baseurl }}" />
+</head>
+
+<body>
+  <div class="root-panel flex-cont flex-ver">
+    <h1 id="title-h">
+      晓旭·七夕
+    </h1>
+    <div class="gift-cont">
+      <img class="gift-cont-inner" src=/assets/1.png></span>
+    </div>
+    <div class="gift-cont">
+      <img class="gift-cont-inner" src=/assets/2.png></span>
+    </div>
+    <div class="gift-cont">
+      <img class="gift-cont-inner" src=/assets/3.png></span>
+    </div>
+    <div class="gift-cont">
+      <img class="gift-cont-inner" src=/assets/4.png></span>
+    </div>
+    <div class="gift-cont">
+      <img class="gift-cont-inner" src=/assets/5.png></span>
+    </div>
+    <div class="gift-cont">
+      <img class="gift-cont-inner" src=/assets/6.png></span>
+    </div>
+    <div class="gift-cont">
+      <img class="gift-cont-inner" src=/assets/7.png></span>
+    </div>
+    <div id="title-sign">
+      <img id="title-sign-inner" src=/assets/toxiaoxu.png></span>
     </div>
   </div>
-</div>
+</body>
+
+</html>
